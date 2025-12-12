@@ -236,7 +236,9 @@ try:
 
         print(f"{now.strftime('%H:%M')} | Esperando siguiente ciclo...")
         time.sleep(60)
-
+if __name__ == "__main__":
+    print("Bot iniciado en Heroku...")
+    # Tu while True aquí ya está
 except KeyboardInterrupt:
     print("\nBot detenido por el usuario. Cerrando todo...")
     cancel_all_orders()
