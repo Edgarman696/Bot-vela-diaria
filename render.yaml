@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: bingx-adx-bot
+    name: Bot-vela-diaria
     env: python
     plan: free
     buildCommand: pip install -r requirements.txt
