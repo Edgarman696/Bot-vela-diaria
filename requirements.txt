@@ -1,4 +1,4 @@
-requests
-numpy
-pandas
-pytz
+requests==2.31.0
+numpy==1.24.3
+pandas==2.0.3
+pytz==2023.3
