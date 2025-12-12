@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: bingx-adx-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python botv3.py
+    autoDeploy: true
+    healthCheckPath: /health  # Render lo ignora porque no es web, pero evita errores
+    envVars:
+      TZ: Europe/Madrid
